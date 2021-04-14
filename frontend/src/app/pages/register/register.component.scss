@@ -1,0 +1,77 @@
+@import "../../../globals.scss";
+
+.registerBg{
+    min-width: 100vw;
+    min-height: 100vh;
+    .registerForm{
+        width: 80vw;
+        max-width: 550px;
+        padding: 25px;
+        border-radius: $cardBorderRadius;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.3);
+        font-size: 18px;
+        min-height: 300px;
+
+        .heading{
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+    
+        input{
+            display: block;
+            width: calc(100% - 20px);
+            padding: 10px;
+            outline: none;
+            border: none;
+            margin: 10px;
+            border-radius: $borderRadius;
+            min-height: 44px;
+            font-size: 16px;
+        }
+
+        .loginLink{
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+            margin: 15px;
+            outline: none;
+            border:none;
+        }
+
+        .error-label{
+            margin: 10px;
+            display: block;
+            width: calc(100% - 20px);
+            background: rgba(0,0,0,0.5);
+            color: red;
+            border-radius: $borderRadius;
+            padding: 5px;
+            font-size: 12px;
+            min-height: 30px;
+            font-weight: 300;
+        }
+    
+        .login{
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px;
+            min-height: 44px;
+            border-radius: $borderRadius;
+            outline: none;
+            border: none;
+            background: $primaryGreen;
+            color: $white;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+            bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+The npm modules are included in the backend folder.
+The frontend folder doesn't have them.
+You will have to run "npm install" in both folders to install all the dependencies.
+To set the frontend up run "ng seve" in the frontend folder. You have to h
+To run unit tests run "ng test" in the frontend folder.
+To run the selenium test run "ng e2e" in the frontend folder.
+To run the backend you'll have to first setup mongo using docker. Pull the mongo image from docker hub and run "sudo docker run -p 27017:27017 mongo".
+After that just run "node app.js". You must have nodejs installed for this to work.
+The dockerfiles for creating docker images for both the frontend and the backend along with a yml file for composing them up into one docker image are present
+in the frontend and the backend folders too.
+

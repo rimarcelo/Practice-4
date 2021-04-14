@@ -1,0 +1,9 @@
+@import "../../../globals.scss";
+
+app-adverts{
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    background: $white;
+    display: block;
+}

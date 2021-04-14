@@ -1,0 +1,15 @@
+<div class="registerBg">
+    <div class="registerForm">
+        <div class="textCenter heading">REGISTER</div>
+
+        <input type="text" class="firstname" placeholder="John" [(ngModel)] = "firstname" (keyup)="fieldChange()" />
+        <input type="text" class="lastname" placeholder="Smith" [(ngModel)] = "lastname" (keyup)="fieldChange()" />
+        <input type="text" class="username" placeholder="username@domain.com" [(ngModel)] = "username" (keyup)="fieldChange()" />
+        <input type="password" class="password" placeholder="**********" [(ngModel)] = "password" (keyup)="fieldChange()" />
+
+        <input type="text" class="avatar" placeholder="Profile Avatar Link" [(ngModel)] = "avatar" (keyup)="fieldChange()" />
+        <span class="error-label textCenter" [ngClass]="(error=='')?'hidden':''">{{error}}</span>
+        <div class="loginLink" [routerLink] = "['/login']">ALREADY REGISTERED?</div>
+        <button class="login" (click)="register()">REGISTER ACCOUNT</button>
+    </div>
+</div>
